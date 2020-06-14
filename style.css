@@ -1,0 +1,160 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  background-color: black;
+}
+
+.container {
+  max-width: 1000px;
+  margin: auto;
+}
+/* HEADER */
+.cabecalho {
+  width: 100%;
+  background-color: #48c5ce;
+}
+
+.cabecalho h1 {
+  padding: 10px;
+  text-align: center;
+  font-size: 26px;
+  font-weight: bold;
+  color: white;
+}
+
+/* PRINCIPAL */
+main {
+  background-image: url("./img/people.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  /* width: 100%;
+  height: 80vh; */
+  overflow: hidden;
+}
+
+.captura {
+  background-color: rgba(255, 255, 255, 0.8);
+  /* width: 25%; */
+  /* height: 90%; */
+  max-width: 230px;
+  float: right;
+  padding: 15px;
+  margin: 20px 20px;
+  border-radius: 5px;
+}
+
+.captura h2 {
+  margin-bottom: 15px;
+  font-size: 1em;
+}
+
+.captura p {
+  margin-bottom: 15px;
+  text-align: justify;
+  font-size: 1em;
+}
+/* 
+.captura form {
+  width: 100%;
+} */
+
+.captura input,
+select {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+select {
+  /*evita icone da seta diferente para cada navegador*/
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+
+  background-image: url("./img/arrow.jpg");
+  background-repeat: no-repeat;
+  background-position: right;
+  /* ALTERNATIVA 
+  background-position-x: calc(100% - 10px);
+  background-position-y: center;'
+  */
+}
+
+.captura button {
+  background-color: #48c5ce;
+  width: 100%;
+  padding: 10px;
+  border: none;
+  color: white;
+  font-weight: bold;
+}
+
+.captura button:hover {
+  border: 1px solid white;
+  cursor: pointer;
+}
+
+/* FOOTER */
+footer {
+  background-color: #202121;
+  width: 100%;
+  float: left;
+}
+
+.rodape {
+  width: auto;
+  max-width: 80%;
+  /* float: right; */
+  display: inline-block;
+  text-align: center;
+  margin: 40px;
+}
+
+.rodape img {
+  width: 160px;
+}
+
+.palestrante {
+  display: inline-block;
+  max-width: 50%;
+  margin-left: 20px;
+}
+
+.palestrante h3 {
+  color: white;
+  margin-bottom: 15px;
+  text-align: left;
+}
+
+.palestrante p {
+  color: white;
+  text-align: justify;
+}
+
+@media screen and (max-width: 580px) {
+  .captura {
+    float: none;
+    max-width: none;
+  }
+
+  .rodape img {
+    margin-right: 0;
+    float: none;
+    width: 250px;
+  }
+
+  .palestrante {
+    display: block;
+    max-width: none;
+    margin-top: 15px;
+  }
+
+  .palestrante h3 {
+    text-align: center;
+  }
+}
